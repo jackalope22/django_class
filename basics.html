@@ -9,30 +9,31 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <a href="page2.html">page two</a>
+    <a href="page2.html">Page Two</a>
     <div class="groupone">
-    <H1>GROUP ONE</H1>
-    <P>I want to <span>be together </span> with group one</P>
+    <H1>This is the main Heading of the page</H1>
+    <P>This is some information in a paragraph that is under the main heading</P>
     </div>
     <ol>
-        <li>stuff</li>
-        <li>more stuff</li>
-        <li>even more stuff</li>
+        <li>I am just writing to show a bunch of nothing</li>
+        <li>Now I am just writing some more stuff</li>
+        <li>This is getting reall annoying</li>
     </ol>
     <ul>
-        <li>more stuff</li>
-        <ol>
+        <li>Here is some more stuff that I am writing</li>
+        <ol class="">
             <li>first stuff</li>
             <li>second stuff</li>
         </ol>
-        <li>wow even more stuff</li>
+        <li>And now some more stuff</li>
     </ul>
     <!--this is a comment-->
-    <b> this is the title of the page</b>
-    <h1> this is a h1 tag</h1>
-    <img src="django.png" alt="image not found">
-    <h2> this is a h2 tag</h2>
-    <table>
+    <h2><b> This is the a test page, it is only a test and no one should panic </b></h2>
+    <h1> ahhhhhhh! ok now you can panic</h1>
+    <img src="django.png" alt="Image not found">
+    <img src="CSS3.png" alt="Image not found">
+    <h2>This is an H2 Tag, and I really dont know why it is here.</h2>
+    <table class="tableone">
         <thead>
             <th>number</th>
             <th>color</th>
@@ -41,23 +42,38 @@
         <tr>
             <td>250</td>
             <td>green</td>
+            <td>woo hooo</td>
         </tr>
         <tr>
             <td>400</td>
             <td>blue</td>
+            <td>booya</td>
         </tr>
     </table>
     <h2>please input you username and password</h2>
-    <form action="http://www.google.com" method="GET">
-        <h3>User e-mail</h3>
-    <input type="email" name="useremail" id="" value="email">
-    <h3>Username</h3>
-    <input type="text" name="username" id="" placeholder="user">
-    <h3>Password</h3>
-    <input type="password" name="password" id="pass">
-    <input type="submit" value="submit">
-    <label for="entertext"> Enter Text: </label>
-    <input type="text" id="entertext">
-    </form>
+
+    <div>
+        <form>
+            <fieldset>
+                <legend><span class="number">1</span>Sign in Info</legend>
+                <input type="text" name="field1" placeholder="Your Name *">
+                <input type="text" name="field2" placeholder="Your Email *">
+                <textarea name="field3" placeholder="Security Question"></textarea>
+                <label for="job">Interests:</label>
+                <select id="job" name="field4">
+                    <optgroup label="Indoors">
+                        <option value="Reading">Reading</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="Coding">Coding</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend><span class="number">2</span>Additional Info</legend>
+                <textarea name="field3" placeholder="About your Job"></textarea>
+            </fieldset>
+            <input type="Submit" value="Apply" />
+        </form>
+    </div>
 </body>
 </html>

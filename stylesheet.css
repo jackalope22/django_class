@@ -1,3 +1,110 @@
 h1{
     text-align: center;
 }
+h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    background-color: rgba(250, 181, 97, 0.845);
+    border: 30px rgb(84, 84, 230);
+    padding: 20px;
+    border-radius: 2px;
+    font-size: medium;
+}
+
+table.tableone{
+    border: 2px solid #ffffff;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.tableone td, table.tableone th{
+    border: 1px solid #ffffff;
+    padding: 3px, 4px;
+}
+table.tableone tbody td{
+    font-size: 24px;
+}
+table.tableone thead th{
+    font-size: 30px;
+    text-align: center;
+    border-left: 2px solid #333333
+}
+table.tableone thead th:first-child{
+    border-left: none;
+}
+table.tableone td:nth-child(even){
+    background: #ebebeb;
+}
+table.tableone thead{
+    background: #ffffff;
+    border-bottom: 4px solid #333333
+}
+ol{
+    list-style-type: none;
+    list-style-type: decimal;
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+    counter-reset: li-counter;
+}
+ol > li{
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 0.5em;
+    min-height: 2em;
+    border-left: 2px solid #cccccc;
+}
+b{
+    text-align: center;
+}
+form{
+    max-width: 500px;
+    padding: 10px, 20px;
+    background: #3978ff;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form fieldset{
+    border: none;
+}
+form legend{
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+form lable{
+    display: block;
+    margin-bottom: 8px;
+}
+form input[type="text"],
+form input[type="date"],
+form input[type="datetime"],
+form input[type="email"]
+form input[type="number"]
+form input[type="search"]
+form input[type="time"]
+form input[type="url"]
+form textarea,
+form select{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px o rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
