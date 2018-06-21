@@ -4,15 +4,56 @@ h1{
 h2{
     text-align: center;
 }
-a{
-    text-decoration: none;
-    background-color: rgba(250, 181, 97, 0.845);
-    border: 30px rgb(84, 84, 230);
-    padding: 20px;
-    border-radius: 2px;
-    font-size: medium;
+.nav ul{
+    list-style: none;
+    background-color: #444444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
-
+.nav li{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888888
+}
+.nav a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: .3s background-color;
+}
+.nav a:hover{
+    background-color: #005f5f;
+}
+.nav a.active {
+    background-color: #ffffff;
+    color: #444444;
+    cursor: default;
+}
+@media screen and (min-width: 600px){
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
+    .nav li{
+        display: inline-block;
+        margin-right: -4px;
+    }
+}
+div.row{
+    display: flex;
+    padding: 0 -8px;
+    border: 1px solid black;
+}
+div.row img{
+    margin: 0 8px;
+    max-height: 300px
+}
 table.tableone{
     border: 2px solid #ffffff;
     width: 50%;
@@ -76,18 +117,18 @@ form legend{
     font-size: 1.4em;
     margin-bottom: 8px;
 }
-form lable{
+form label{
     display: block;
     margin-bottom: 8px;
 }
 form input[type="text"],
 form input[type="date"],
 form input[type="datetime"],
-form input[type="email"]
-form input[type="number"]
-form input[type="search"]
-form input[type="time"]
-form input[type="url"]
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="time"],
+form input[type="url"],
 form textarea,
 form select{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -107,4 +148,53 @@ form select{
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     box-shadow: 0 1px o rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
+}
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="datetime"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="search"]:focus,
+form input[type="time"]:focus,
+form input[type="url"]:focus,
+form textarea:focus,
+form select:focus{
+    background: #d2d9dd;
+}
+form select{
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+span.number{
+    background: #1abc9c;
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+form input[type="submit"],
+form input[type="button"]{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #ffffff;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+form input[type="submit"],
+form input[type="button"]{
+    background: #109177;
 }
