@@ -48,13 +48,22 @@ h2{
 div.row{
     display: flex;
     padding: 0 -8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 1px solid black;
 }
 div.row img{
     margin: 0 8px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-height: 300px
 }
 table.tableone{
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid #ffffff;
     width: 50%;
     text-align: center;
